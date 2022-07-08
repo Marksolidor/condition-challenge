@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FAF3E3;
+}
+
+/**Challenge 1**/
+.challenge1{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #000000;
+}
+
+.puppy{
+    margin-top: 1rem;
+    width: 25%;
+    border-radius: 10%;
+}

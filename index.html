@@ -48,47 +48,58 @@
             </div>
           </div>
         </div>
-        <div class="calc">
-          <p id="sticker-total" class="sticker-total"></p>
-          <button id="sum-stickers">Calcular</button>
-        </div>
-        <div class="selectors">
-            <h1>INGRESA PASSWORD</h1><br>
-            <select name="selector1" id="selector1">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select name="selector2" id="selector2">
-                <option value="1">1</option>
-                <option value="2" selected>2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select name="selector3" id="selector3">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3" selected>3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select><br>
-                <button>Ingresar</button>
-                <p id="allowed"></p>
+      
+      <div class="calc">
+        <p id="sticker-total" class="sticker-total"></p>
+        <button id="sum-stickers">Calcular</button>
+      </div>
+    </div>
+
+    <!--Desafío Parte 3 Total (4 puntos)
+    Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer click a
+    la opción ingresar se debe verificar que el password sea 911 y en ese caso mostrar debajo
+    del botón ingresar, un párrafo con el contenido "password 1 correcto", en caso de que el
+    password sea 714 se debe mostrar en el párrafo "password 2 es correcto", si ingresa otro
+    valor se debe mostrar "password incorrecto".
+    -->
+      <div class="selectors">
+        <h1>INGRESA PASSWORD</h1>
+        <br />
+        <select name="selector1" id="selector1">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="selector2" id="selector2">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="selector3" id="selector3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option></select
+        ><br />
+        <button>Ingresar</button>
+        <p id="allowed"></p>
       </div>
     </main>
     <script src="assets\js\app.js"></script>

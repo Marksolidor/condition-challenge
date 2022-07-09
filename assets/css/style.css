@@ -22,7 +22,7 @@ h1 {
 }
 
 /**Challenge 2**/
-.challenge2{
+.challenge2 {
     background-color: #1A4D2E;
     width: 100%;
     text-align: center;
@@ -32,4 +32,10 @@ h1 {
 .container {
     display: flex;
     text-align: center;
+    margin: 2rem;
+}
+
+.sticker {
+width: 50%;
+border-radius: 10%;
 }

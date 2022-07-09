@@ -9,7 +9,7 @@
       }
     })
 
-    //Challange 2, this code block take the number value of 3 inputs and return a message if all stickers sum less
+    //Challenge 2, this code block take the number value of 3 inputs and return a message if all stickers sum less
     //than 10, if there are more than 10 or if the input is not a number
     let calculator = document.querySelector("#sum-stickers");
     calculator.addEventListener("click", (e) => {
@@ -24,4 +24,20 @@
         document.querySelector("#sticker-total").innerHTML = "Llevas demasiados items";
     } else {
         document.querySelector("#sticker-total").innerHTML = "Llevas" + " " + totalSelection + " " + "items";
+    }})
+
+    //Challenge 3, this code block take the value of 3 inputs from selectors, then compare the number and 
+    //allows one of two passwords
+    let verificate = document.querySelector("#verificator");
+    verificate.addEventListener("click", (e) => {
+    let digit1 = document.querySelector("#selector1").value;
+    let digit2 = document.querySelector("#selector2").value;
+    let digit3 = document.querySelector("#selector3").value;
+    let VerificationOfImputs = digit1 + digit2 + digit3;
+    if (VerificationOfImputs == "911"){
+        document.querySelector("#allowed").innerHTML = "Password correcto";
+    } else if (VerificationOfImputs == "714") {
+        document.querySelector("#allowed").innerHTML = "Password correcto";
+    } else {
+        document.querySelector("#allowed").innerHTML = "Password incorrecto"; 
     }})

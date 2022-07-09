@@ -52,3 +52,7 @@ border-radius: 10%;
     width: 100%;
     text-align: center;
 }
+
+.allowed{
+    color: #FAF3E3;
+}

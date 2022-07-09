@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets\css\style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+  <body>
     <main>
-        <!--Desafío Parte 1: Total (2 puntos)
+      <!--Desafío Parte 1: Total (2 puntos)
         Se debe construir una página con una única imagen, al hacerle 
         click a la imagen se le debe agregar un borde rojo de 2 pixeles, 
         al hacerle click nuevamente se le debe quitar el borde.-->
-        <div class="challenge1">
-            <h1>Haz click en la imagen para agregar o quitar el borde</h1>
-            <a href="#"><img class="puppy" id="puppy" src="assets\img\puppy.jpg" alt=""></a>
+      <div class="challenge1">
+        <h1>Haz click en la imagen para agregar o quitar el borde</h1>
+        <a href="#"
+          ><img class="puppy" id="puppy" src="assets\img\puppy.jpg" alt=""
+        /></a>
+      </div>
+      <!--Desafío Parte 2: Total (4 puntos)
+        Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+        disponibles. Para eso deberá existir un input debajo de cada imagen donde el usuario podrá
+        ingresar un número. En caso de que la suma de todos los stickers seleccionados sea menor
+        o igual 10 se indicará en un párrafo nuevo la cantidad de stickers llevados. Ejemplo "llevas
+        5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas demasiados
+        stickers"-->
+      <div class="challenge2">
+        <h1>Seleccione hasta 10 stickers</h1>
+        <div class="container">
+          <div>
+            <img class="sticker" src="assets\img\sticker1.jpg" />
+            <div>
+              <input id="input-1" itype="text" placeholder="Ingrese cantidad" />
+            </div>
+          </div>
+          <div>
+            <img class="sticker" src="assets\img\sticker2.jpg" />
+            <div>
+              <input id="input-2" itype="text" placeholder="Ingrese cantidad" />
+            </div>
+          </div>
+          <div>
+            <img class="sticker" src="assets\img\sticker3.jpg" />
+            <div>
+              <input id="input-3" itype="text" placeholder="Ingrese cantidad" />
+            </div>
+          </div>
         </div>
-        <!--Desafío Parte 2: Total (4 puntos)
-Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
-disponibles. Para eso deberá existir un input debajo de cada imagen donde el usuario podrá
-ingresar un número. En caso de que la suma de todos los stickers seleccionados sea menor
-o igual 10 se indicará en un párrafo nuevo la cantidad de stickers llevados. Ejemplo "llevas
-5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas demasiados
-stickers"-->
-
-<div class="challenge2">
-    <h1>Seleccione hasta 10 stickers</h1>
-    <div class="container">
-        <div>
-            <img class="sticker" src="assets\img\sticker1.jpg" >
-            <div><input id="input-1" itype="text" placeholder="Ingrese cantidad"></div> 
+        <div class="calc">
+          <p id="sticker-total" class="sticker-total"></p>
+          <button id="sum-stickers">Calcular</button>
         </div>
-        <div>
-            <img class="sticker" src="assets\img\sticker2.jpg" >
-            <div><input id="input-2" itype="text" placeholder="Ingrese cantidad"></div>
-        </div>
-        <div>
-            <img class="sticker" src="assets\img\sticker3.jpg" >
-            <div><input id="input-3" itype="text" placeholder="Ingrese cantidad"></div> 
-        </div>
-    </div>
-    <div class="calc">
-        <p id="sticker-total"></p>
-        <button id="sum-stickers">Calcular</button>
-    </div>
-</div> 
-    </main> 
-    <script src="assets\js\app.js"></script> 
-</body>
+      </div>
+    </main>
+    <script src="assets\js\app.js"></script>
+  </body>
 </html>

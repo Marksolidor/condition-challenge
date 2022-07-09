@@ -9,15 +9,19 @@
       }
     })
 
-    //Challange 2,
+    //Challange 2, this code block take the number value of 3 inputs and return a message if all stickers sum less
+    //than 10, if there are more than 10 or if the input is not a number
     let calculator = document.querySelector("#sum-stickers");
     calculator.addEventListener("click", (e) => {
     let sticker1 = document.querySelector("#input-1").value;
     let sticker2 = document.querySelector("#input-2").value;
     let sticker3 = document.querySelector("#input-3").value;
     let totalSelection = Number(sticker1) + Number(sticker2) + Number(sticker3);
-    if (totalSelection >10) {
-        document.querySelector("#sticker-total").innerHTML = "Llevas demaciados items"
+    if (isNaN(totalSelection)) {
+        document.querySelector("#sticker-total").innerHTML = "Ingrese un valor numérico";
+    }
+    else if (totalSelection >10) {
+        document.querySelector("#sticker-total").innerHTML = "Llevas demasiados items";
     } else {
         document.querySelector("#sticker-total").innerHTML = "Llevas" + " " + totalSelection + " " + "items";
     }})

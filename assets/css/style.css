@@ -39,3 +39,8 @@ h1 {
 width: 50%;
 border-radius: 10%;
 }
+
+.sticker-total {
+    color: #FAF3E3;
+    padding-bottom: 1rem;
+}
